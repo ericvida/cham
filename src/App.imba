@@ -51,6 +51,38 @@ tag Results
 						<h3> eng.replace! /(^\w{1})|(\s+\w{1})/g, do(letter) letter.toUpperCase!
 						<span.cham> "{cham}" 
 						<span.use> "{use}"
+# appendNodes
+
+
+tag SearchTwo
+	prop office = ['Kelly', 'Creed', 'Stanley', 'Oscar', 'Michael', 'Jim', 'Darryl', 'Phyllis', 'Pam', 'Dwight', 'Angela', 'Andy', 'William', 'Ryan', 'Toby', 'Bob']
+	prop query
+	prop filteredArr = []
+	def filterFunction
+		filteredArr = office.filter(do(x)
+			return x.toLowerCase!.includes(query.toLowerCase!)
+			)
+		if filteredArr.length > 0
+			return filteredArr
+		else
+			console.log "no results"
+	def checkName name, str
+		pattern = str.split("").map(do(x)
+			return "(?=.*{x})"
+			).join("")
+		regex = new RegExp("{pattern}", "g")
+		return name.match(regex)
+	def render
+		<self>
+			<input[bg:gray3 p:4 mx:auto d:block mb:3] placeholder="type" @keyup.filterFunction bind=query>
+			<ResultsTwo bind:filteredArr=filteredArr>
+
+tag ResultsTwo
+	def render
+		<self>
+			<ul>
+				for item in filteredArr
+					<li> item
 tag App
 	css &
 		bg:gray1
@@ -63,13 +95,14 @@ tag App
 		data = await dictionary.json!
 		console.log data
 		return data
-	def mount
-		getStuff!
+	# def mount
+	# 	getStuff!
 	def render
-		getStuff!
 		<self[ff:sans fw:bold]>
-			<SearchBar>
-			<h1> query
-			<Results bind:data=data>
+			<SearchTwo>
+			<ResultsTwo>
+			# <NewSearch>
+			# <SearchBar>
+			# <Results bind:data=data>
 
 imba.mount <App>
