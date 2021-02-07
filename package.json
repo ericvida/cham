@@ -1,0 +1,18 @@
+{
+  "name": "imbalatest",
+  "scripts": {
+    "start": "imba -w app.imba",
+    "build": "imba build ./src/index.html"
+  },
+  "dependencies": {
+    "imba": "^2.0.0-alpha.124"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.22"
+  },
+  "description": "",
+  "version": "1.0.0",
+  "homepage": "https://github.com//imbalatest",
+  "author": "Author Name (https://github.com/)",
+  "license": "ISC"
+}
