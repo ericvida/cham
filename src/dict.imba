@@ -1,19 +1,19 @@
 export let dict = [
-	wordCham: "cham"
-	wordIpa: "cam (ipa)"
-	wordReviewed: false
-	wordNotes: "notes"
-	engArray: [
-		engWord: "eng"
-		engInfo: "info"
-		engUse: "use"
-		]
-	khArray: [
-		khWord: "kh"
-		khInfo: "khipa"
-		khUse: ""
-		]
-	---
+	# wordCham: "cham"
+	# wordIpa: "cam (ipa)"
+	# wordReviewed: false
+	# wordNotes: "notes"
+	# engArray: [
+	# 	engWord: "eng"
+	# 	engInfo: "info"
+	# 	engUse: "use"
+	# 	]
+	# khArray: [
+	# 	khWord: "kh"
+	# 	khInfo: "khipa"
+	# 	khUse: ""
+	# 	]
+	# ---
 	wordCham: "aai"
 	wordIpa: ""
 	wordReviewed: false

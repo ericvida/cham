@@ -167,20 +167,9 @@ tag app-root
 							c:indigo3
 							bd:0px solid
 						<shuffle-icon>
-			# <ul[d:flex w:100% jc:center td:none g:1em]>
-			# 	<li>
-			# 		<a route-to="/"> "home"
-			# 	<li>
-			# 		<a route-to="/json"> "json"
-			# 	<li>
-			# 		<a route-to="/list"> "list"
-			# 	<li>
-			# 		<a route-to="/card"> "card"
-			# 	<li>
-			# 		<a route-to="/word/test"> "test"
 			<section.results>
+				<word-list route="/list" bind:query=query>
 				<word-item route="/word/:id" >
-				<word-list href="/list" bind:query=query>
 				<json-results route="/json" bind:query=query>
 			<footer>
 				css bg:gray7 c:white p:4
