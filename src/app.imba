@@ -114,7 +114,7 @@ tag word-item
 						<p[fs:sm d:block]> "{word.engInfo}"
 					
 					# Close Card Button
-					<a route-to="/"> 
+					<a route-to="/list"> 
 						css tween:all .2s
 							bg:indigo0 @hover:indigo5
 							h:100%
@@ -132,11 +132,11 @@ tag word-list
 		<self>
 			css bg:warm0 d:block px:6 min-height:100vh
 			<div >
-				css bg:white px:3 pt:6 bxs:sm, xxl cursor:pointer
+				css bg:white px:3 pt:6 pb:4 bxs:sm, xxl cursor:pointer rdb:xl
 				for dictItem, itemIndex in dict
 					<div route-to="/word/{itemIndex}/" @click.scrollToTop>
 						for engItem, engIndex in dictItem.engArray when VidaSearch(query, engItem.engWord)
-							<div[bdb:1px solid warm2 @hover:white px:3 py:2 fw:500 c:warm9 bg:white @hover: gray1]>
+							<div[bdb:2px solid warm1 @hover:2px solid white px:3 py:2 fw:500 c:warm9 bg:white @hover: gray1]>
 								<a><h1> engItem.engWord								
 tag app-root
 	# PROPS
@@ -147,24 +147,26 @@ tag app-root
 	def render
 		<self[d:block]>
 			<header>
-				css p:6 bg:gray9 d:flex
-
-				# Search Bar
-				<input route-to="/" placeholder="English to Cham Dictionary" bind=query>
-					css px:6 py:3 rdl:sm flg:1 h:50px bd:0
-						border: 0px solid;
-						mr:-1px
-				
-				# Shuffle button
-				<button alt="random word" route-to="/word/{randomNum}" @click.createRandomNum>
-					css 
-						size:50px
-						rdr:sm
-						p:3
-						bg:indigo1 @hover: indigo5
-						c:indigo3
-						bd:0px solid
-					<shuffle-icon>
+				css p:6 pt:2 bg:gray9
+				<h1[c:white ta:center pb:2 ff:sans tt:uppercase]> 
+					<a route-to="/list"> "English to Cham Dictionary"
+				<div[d:flex]>
+					# Search Bar
+					<input route-to="/list" placeholder="Type to Search:"  bind=query>
+						css px:6 py:3 rdl:sm flg:1 h:50px bd:0
+							border: 0px solid;
+							mr:-1px
+					
+					# Shuffle button
+					<button alt="random word" route-to="/word/{randomNum}" @click.createRandomNum>
+						css 
+							size:50px
+							rdr:sm
+							p:3
+							bg:indigo1 @hover: indigo5
+							c:indigo3
+							bd:0px solid
+						<shuffle-icon>
 			# <ul[d:flex w:100% jc:center td:none g:1em]>
 			# 	<li>
 			# 		<a route-to="/"> "home"
@@ -177,8 +179,8 @@ tag app-root
 			# 	<li>
 			# 		<a route-to="/word/test"> "test"
 			<section.results>
-				<word-list route="/" bind:query=query>
 				<word-item route="/word/:id" >
+				<word-list href="/list" bind:query=query>
 				<json-results route="/json" bind:query=query>
 			<footer>
 				css bg:gray7 c:white p:4
