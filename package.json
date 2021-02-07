@@ -2,7 +2,7 @@
   "name": "imbalatest",
   "scripts": {
     "start": "imba -w app.imba",
-    "build": "imba build ./src/index.html"
+    "build": "imba build index.html"
   },
   "dependencies": {
     "imba": "^2.0.0-alpha.124"

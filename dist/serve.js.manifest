@@ -321,18 +321,23 @@
     ],
     [
       "$$37$$",
-      390
+      48
+    ],
+    [
+      "$$38$$",
+      510
     ]
   ],
-  "bytes": 523,
-  "source": "$$37$$",
+  "bytes": 721,
+  "source": "$$38$$",
   "_": "output",
   "path": "public/index.html",
   "type": "html",
   "dependencies": [
-    "$$36$$"
+    "$$36$$",
+    "$$37$$"
   ],
-  "hash": "O9DAAII1",
+  "hash": "QD9RFFM8",
   "originalPath": "public/src/index.__dist__.html"
 },
 "$$33$$":{
@@ -340,7 +345,7 @@
   "exports": [],
   "inputs": [],
   "bytes": 523993,
-  "source": "$$38$$",
+  "source": "$$39$$",
   "_": "output",
   "path": "public/__assets__/src/app.EHIPMTYG.js.map",
   "url": "/__assets__/src/app.EHIPMTYG.js.map",
@@ -354,72 +359,68 @@
   "exports": [],
   "inputs": [
     [
-      "$$39$$",
+      "$$40$$",
       5737
     ],
     [
-      "$$40$$",
+      "$$41$$",
       1183
     ],
     [
-      "$$41$$",
+      "$$42$$",
       3140
     ],
     [
-      "$$42$$",
+      "$$43$$",
       757
     ],
     [
-      "$$43$$",
+      "$$44$$",
       6790
     ],
     [
-      "$$44$$",
+      "$$45$$",
       3788
     ],
     [
-      "$$45$$",
+      "$$46$$",
       4058
     ],
     [
-      "$$46$$",
+      "$$47$$",
       22
     ],
     [
-      "$$47$$",
+      "$$48$$",
       198
     ],
     [
-      "$$48$$",
+      "$$49$$",
       3970
     ],
     [
-      "$$49$$",
+      "$$50$$",
       4457
     ],
     [
-      "$$50$$",
+      "$$51$$",
       8150
     ],
     [
-      "$$51$$",
+      "$$52$$",
       1353
     ],
     [
-      "$$52$$",
+      "$$53$$",
       433
     ],
     [
-      "$$53$$",
+      "$$54$$",
       2921
     ],
     [
-      "$$54$$",
-      676
-    ],
-    [
       "$$55$$",
-      0
+      676
     ],
     [
       "$$56$$",
@@ -427,24 +428,28 @@
     ],
     [
       "$$57$$",
-      582
-    ],
-    [
-      "$$58$$",
-      184717
-    ],
-    [
-      "$$59$$",
       0
     ],
     [
-      "$$38$$",
+      "$$58$$",
+      582
+    ],
+    [
+      "$$59$$",
+      184717
+    ],
+    [
+      "$$60$$",
+      0
+    ],
+    [
+      "$$39$$",
       11568
     ]
   ],
   "bytes": 245108,
-  "source": "$$38$$",
-  "css": "$$35$$",
+  "source": "$$39$$",
+  "css": "$$61$$",
   "map": "$$33$$",
   "_": "output",
   "path": "public/__assets__/src/app.EHIPMTYG.js",
@@ -458,16 +463,16 @@
   "imports": [],
   "inputs": [
     [
-      "$$59$$",
+      "$$62$$",
       3742
     ],
     [
-      "$$56$$",
+      "$$63$$",
       3095
     ]
   ],
   "bytes": 6838,
-  "source": "$$38$$",
+  "source": "$$64$$",
   "_": "output",
   "path": "public/__assets__/src/app.N0PDHLMG.css",
   "url": "/__assets__/src/app.N0PDHLMG.css",
@@ -480,288 +485,361 @@
   "bytes": 25,
   "imports": [],
   "_": "input",
+  "path": "entry:src/app.imba?as=css",
+  "asset": "$$35$$"
+},
+"$$37$$":{
+  "bytes": 25,
+  "imports": [],
+  "_": "input",
   "path": "entry:src/app.imba?as=web",
   "asset": "$$34$$"
 },
-"$$37$$":{
-  "bytes": 457,
+"$$38$$":{
+  "bytes": 610,
   "imports": [
-    "$$36$$"
+    "$$36$$",
+    "$$37$$"
   ],
   "_": "input",
   "path": "src/index.html",
   "js": "$$32$$"
 },
-"$$38$$":{
+"$$39$$":{
   "bytes": 38980,
   "imports": [
-    "$$55$$",
     "$$56$$",
-    "$$60$$",
     "$$57$$",
+    "$$65$$",
     "$$58$$",
-    "$$59$$"
+    "$$59$$",
+    "$$60$$"
   ],
   "_": "input",
   "path": "src/app.imba",
   "js": "$$34$$",
-  "css": "$$35$$",
+  "css": "$$61$$",
   "map": "$$33$$"
 },
-"$$39$$":{
+"$$40$$":{
   "bytes": 14160,
   "imports": [],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/vendor/events.js"
 },
-"$$40$$":{
+"$$41$$":{
   "bytes": 18005,
   "imports": [],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/src/imba/utils.imba"
 },
-"$$41$$":{
+"$$42$$":{
   "bytes": 16657,
   "imports": [],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/src/imba/scheduler.imba"
 },
-"$$42$$":{
+"$$43$$":{
   "bytes": 4307,
   "imports": [],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/src/imba/dom/flags.imba"
 },
-"$$43$$":{
-  "bytes": 41083,
-  "imports": [
-    "$$42$$"
-  ],
-  "_": "input",
-  "path": "../../../../usr/local/lib/node_modules/imba/src/imba/dom/core.web.imba"
-},
 "$$44$$":{
-  "bytes": 23557,
+  "bytes": 41083,
   "imports": [
     "$$43$$"
   ],
   "_": "input",
-  "path": "../../../../usr/local/lib/node_modules/imba/src/imba/dom/fragment.imba"
+  "path": "../../../../usr/local/lib/node_modules/imba/src/imba/dom/core.web.imba"
 },
 "$$45$$":{
+  "bytes": 23557,
+  "imports": [
+    "$$44$$"
+  ],
+  "_": "input",
+  "path": "../../../../usr/local/lib/node_modules/imba/src/imba/dom/fragment.imba"
+},
+"$$46$$":{
   "bytes": 26181,
   "imports": [
-    "$$43$$",
     "$$44$$",
-    "$$41$$"
+    "$$45$$",
+    "$$42$$"
   ],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/src/imba/dom/component.imba"
 },
-"$$46$$":{
+"$$47$$":{
   "bytes": 381,
   "imports": [],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/src/imba/dom/context.imba"
 },
-"$$47$$":{
+"$$48$$":{
   "bytes": 2022,
   "imports": [
-    "$$46$$",
-    "$$41$$"
+    "$$47$$",
+    "$$42$$"
   ],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/src/imba/dom/mount.imba"
 },
-"$$48$$":{
+"$$49$$":{
   "bytes": 23690,
   "imports": [
-    "$$43$$",
-    "$$41$$"
+    "$$44$$",
+    "$$42$$"
   ],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/src/imba/dom/bind.imba"
 },
-"$$49$$":{
+"$$50$$":{
   "bytes": 28384,
   "imports": [
-    "$$43$$",
-    "$$40$$",
-    "$$41$$"
+    "$$44$$",
+    "$$41$$",
+    "$$42$$"
   ],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/src/imba/events/core.imba"
 },
-"$$50$$":{
+"$$51$$":{
   "bytes": 42085,
   "imports": [
-    "$$39$$",
-    "$$43$$",
-    "$$51$$",
-    "$$61$$",
-    "$$52$$",
-    "$$53$$",
-    "$$41$$",
     "$$40$$",
-    "$$54$$"
+    "$$44$$",
+    "$$52$$",
+    "$$66$$",
+    "$$53$$",
+    "$$54$$",
+    "$$42$$",
+    "$$41$$",
+    "$$55$$"
   ],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/src/imba/router/index.imba"
 },
-"$$51$$":{
+"$$52$$":{
   "bytes": 7122,
   "imports": [],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/src/imba/router/location.imba"
 },
-"$$52$$":{
+"$$53$$":{
   "bytes": 2584,
   "imports": [
-    "$$51$$"
+    "$$52$$"
   ],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/src/imba/router/request.imba"
 },
-"$$53$$":{
+"$$54$$":{
   "bytes": 17896,
   "imports": [],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/src/imba/router/route.imba"
 },
-"$$54$$":{
+"$$55$$":{
   "bytes": 3894,
   "imports": [
-    "$$40$$"
+    "$$41$$"
   ],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/src/imba/queue.imba"
 },
-"$$55$$":{
+"$$56$$":{
   "bytes": 334,
   "imports": [
-    "$$62$$"
+    "$$67$$"
   ],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/index.imba"
 },
-"$$56$$":{
+"$$57$$":{
   "bytes": 12207,
   "imports": [],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/preflight.css"
 },
-"$$57$$":{
+"$$58$$":{
   "bytes": 5085,
   "imports": [],
   "_": "input",
   "path": "src/VidaSearch.imba"
 },
-"$$58$$":{
+"$$59$$":{
   "bytes": 861827,
   "imports": [],
   "_": "input",
   "path": "src/dict.imba"
 },
-"$$59$$":{
+"$$60$$":{
   "bytes": 4385,
   "imports": [],
   "_": "input",
   "path": "styles:src/app.imba"
 },
-"$$60$$":{
+"$$61$$":{
+  "imports": [],
+  "inputs": [
+    [
+      "$$60$$",
+      3742
+    ],
+    [
+      "$$57$$",
+      3095
+    ]
+  ],
+  "bytes": 6838,
+  "source": "$$39$$",
+  "_": "output",
+  "path": "public/__assets__/src/app.N0PDHLMG.css",
+  "url": "/__assets__/src/app.N0PDHLMG.css",
+  "type": "css",
+  "dependencies": [],
+  "hash": "N0PDHLMG",
+  "originalPath": "public/__assets__/src/app.__dist__.css"
+},
+"$$62$$":{
+  "bytes": 4385,
+  "imports": [],
+  "_": "input",
+  "path": "styles:src/app.imba"
+},
+"$$63$$":{
+  "bytes": 12207,
+  "imports": [],
+  "_": "input",
+  "path": "../../../../usr/local/lib/node_modules/imba/preflight.css"
+},
+"$$64$$":{
+  "bytes": 38980,
+  "imports": [
+    "$$63$$",
+    "$$68$$",
+    "$$69$$",
+    "$$70$$",
+    "$$62$$"
+  ],
+  "_": "input",
+  "path": "src/app.imba",
+  "css": "$$35$$"
+},
+"$$65$$":{
   "bytes": 128332,
   "imports": [],
   "_": "input",
   "path": "src/data.json"
 },
-"$$61$$":{
+"$$66$$":{
   "bytes": 2319,
   "imports": [],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/src/imba/router/history.imba"
 },
-"$$62$$":{
+"$$67$$":{
   "bytes": 2157,
   "imports": [
-    "$$40$$",
     "$$41$$",
-    "$$63$$",
-    "$$64$$",
-    "$$65$$",
-    "$$43$$",
+    "$$42$$",
+    "$$71$$",
+    "$$72$$",
+    "$$73$$",
     "$$44$$",
     "$$45$$",
-    "$$66$$",
     "$$46$$",
+    "$$74$$",
     "$$47$$",
     "$$48$$",
     "$$49$$",
-    "$$67$$",
-    "$$68$$",
-    "$$69$$",
-    "$$70$$",
-    "$$50$$"
+    "$$50$$",
+    "$$75$$",
+    "$$76$$",
+    "$$77$$",
+    "$$78$$",
+    "$$51$$"
   ],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/src/imba/imba.imba"
 },
-"$$63$$":{
+"$$68$$":{
+  "bytes": 128332,
+  "imports": [],
+  "_": "input",
+  "path": "src/data.json"
+},
+"$$69$$":{
+  "bytes": 5085,
+  "imports": [],
+  "_": "input",
+  "path": "src/VidaSearch.imba"
+},
+"$$70$$":{
+  "bytes": 861827,
+  "imports": [],
+  "_": "input",
+  "path": "src/dict.imba"
+},
+"$$71$$":{
   "bytes": 549,
   "imports": [],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/src/imba/manifest.web.imba"
 },
-"$$64$$":{
+"$$72$$":{
   "bytes": 307,
   "imports": [],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/src/imba/process.web.imba"
 },
-"$$65$$":{
+"$$73$$":{
   "bytes": 4869,
   "imports": [
-    "$$63$$"
+    "$$71$$"
   ],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/src/imba/asset.imba"
 },
-"$$66$$":{
+"$$74$$":{
   "bytes": 28867,
   "imports": [
-    "$$43$$"
+    "$$44$$"
   ],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/src/imba/dom/styles.imba"
 },
-"$$67$$":{
+"$$75$$":{
   "bytes": 9371,
   "imports": [
-    "$$43$$"
+    "$$44$$"
   ],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/src/imba/events/intersect.imba"
 },
-"$$68$$":{
+"$$76$$":{
   "bytes": 31998,
   "imports": [
-    "$$43$$",
-    "$$40$$"
+    "$$44$$",
+    "$$41$$"
   ],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/src/imba/events/pointer.imba"
 },
-"$$69$$":{
+"$$77$$":{
   "bytes": 3252,
   "imports": [
-    "$$43$$"
+    "$$44$$"
   ],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/src/imba/events/resize.imba"
 },
-"$$70$$":{
+"$$78$$":{
   "bytes": 2896,
   "imports": [
-    "$$43$$"
+    "$$44$$"
   ],
   "_": "input",
   "path": "../../../../usr/local/lib/node_modules/imba/src/imba/events/selection.imba"
@@ -823,5 +901,5 @@
   "path": "serve.js.manifest",
   "srcdir": "../..",
   "outdir": "..",
-  "hash": "YXRFKD4B"
+  "hash": "ZBPWBTHM"
 }
