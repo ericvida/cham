@@ -114,7 +114,7 @@ tag word-item
 						<p[fs:sm d:block]> "{word.engInfo}"
 					
 					# Close Card Button
-					<a route-to="/list"> 
+					<a route-to="/"> 
 						css tween:all .2s
 							bg:indigo0 @hover:indigo5
 							h:100%
@@ -150,7 +150,7 @@ tag app-root
 				css p:6 bg:gray9 d:flex
 
 				# Search Bar
-				<input route-to="/list" placeholder="English to Cham Dictionary" bind=query>
+				<input route-to="/" placeholder="English to Cham Dictionary" bind=query>
 					css px:6 py:3 rdl:sm flg:1 h:50px bd:0
 						border: 0px solid;
 						mr:-1px
@@ -177,7 +177,7 @@ tag app-root
 			# 	<li>
 			# 		<a route-to="/word/test"> "test"
 			<section.results>
-				<word-list route="/list" bind:query=query>
+				<word-list route="/" bind:query=query>
 				<word-item route="/word/:id" >
 				<json-results route="/json" bind:query=query>
 			<footer>
